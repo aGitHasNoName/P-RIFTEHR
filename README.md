@@ -2,15 +2,18 @@
 
 Relationship Inference From The EHR (RIFTEHR) is an automated algorithm for identifying relatedness between patients in an institution's Electronic Health Records.
 
-Original Authors: Fernanda Polubriaginof and Nicholas Tatonetti
+Original Code Authors: Fernanda Polubriaginof and Nicholas Tatonetti
 
-http://riftehr.tatonettilab.org
+https://github.com/tatonetti-lab/riftehr
 
 2nd Version: Farhad Ghamsari
 
-This Version: Colby Wood and Dan Turner
+https://github.com/FarhadGSRX/Pythonic_RIFTEHR
+
+This Version: Colby Witherup Wood (https://github.com/aGitHasNoName) and Dan Turner (https://github.com/turnerdan)
 
 
+*Publication info coming soon.*
 
 Remember to always respect patient privacy.
 
@@ -19,7 +22,7 @@ Remember to always respect patient privacy.
 
 2nd ver.: Fully Python, no dependencies on SQL or Julia
 <br>2nd ver.:  Much, much faster, thanks to vectorization of functions
-<br>Changes in the current version:
+<br><br>Changes in the current version:
 <br>Significant changes are in Step 2. New Step 2 replaces old Steps 2, 3, and 4.
 - Conflict checks (spouse age, generation age, flipped relationship, mismatched provided relationships) are now fully integrated into the inference step at every stage to prevent inferred matches based on conflicts
 - Families are now defined by networkx before inferences are made and the inference step is applied within families instead of across the entire dataset
